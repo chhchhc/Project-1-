@@ -1,0 +1,80 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin large {
+  @media only screen and (max-width: map-get($screen, large)) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (max-width: map-get($screen, medium)) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (max-width: map-get($screen, small)) {
+    @content;
+  }
+}
+
+@mixin extra-small {
+  @media only screen and (max-width: map-get($screen, extra-small)) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media only screen and (max-width: map-get($screen, iphone)) {
+    @content;
+  }
+}
+
+
+@mixin colors-all-font {
+  color: color(black);
+  &.grey50 {
+    color: color(grey, 50);
+  }
+  &.white {
+    color: color(white);
+  }
+}
+
+@mixin colors-all-font-hover {
+  color: color(black);
+  transition: color 0.25s ease;
+  &:hover {
+    color: darken(color(black), 10%);
+  }
+  &:active {
+    color: darken(color(black), 20%);
+  }
+  &.grey100 {
+    color: color(grey, 100);
+    &:hover {
+      color: darken(color(grey, 100), 10%);
+    }
+    &:active {
+      color: darken(color(grey, 100), 20%);
+    }
+  }
+  &.white {
+    color: color(white);
+    &:hover {
+      color: color(grey, 50);
+    }
+    &:active {
+      color: color(grey, 75);
+    }
+  }
+}
