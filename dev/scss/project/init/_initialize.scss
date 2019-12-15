@@ -1,0 +1,31 @@
+//Content Area
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* ==========================================================================
+   FONT SIZING &  LINE HEIGHT
+   ========================================================================== */
+
+.a-h1 {
+  font-size: map-get($fz, h1);
+  line-height: map-get($lh, h1);
+}
+.a-h2 {
+  font-size: map-get($fz, h2);
+  line-height: map-get($lh, h2);
+}
+.a-h3 {
+  font-size: map-get($fz, h3);
+  line-height: map-get($lh, h3);
+}
+.a-h4 {
+  font-size: map-get($fz, h4);
+  line-height: map-get($lh, h4);
+}
+body {
+  font-size: map-get($fz, body);
+  line-height: map-get($lh, body);
+}
