@@ -42,8 +42,8 @@
 
 @mixin colors-all-font {
   color: color(black);
-  &.grey50 {
-    color: color(grey, 50);
+  &.grey {
+    color: color(grey, 100);
   }
   &.white {
     color: color(white);
@@ -53,13 +53,14 @@
 @mixin colors-all-font-hover {
   color: color(black);
   transition: color 0.25s ease;
+  cursor: pointer;
   &:hover {
     color: darken(color(black), 10%);
   }
   &:active {
     color: darken(color(black), 20%);
   }
-  &.grey100 {
+  &.grey {
     color: color(grey, 100);
     &:hover {
       color: darken(color(grey, 100), 10%);
@@ -75,6 +76,15 @@
     }
     &:active {
       color: color(grey, 75);
+    }
+  }
+  &.primary {
+    color: color(primary, 100);
+    &:hover {
+      color: darken(color(primary, 150), 10%);
+    }
+    &:active {
+      color: darken(color(primary, 50), 20%);
     }
   }
 }

@@ -16,7 +16,7 @@ $fz: (
   h4: 2.4rem,
   mh4: 1.6rem,
   body: 2rem,
-  mbody: 1.6rem,
+  mbody: 1.6rem
 );
 
 /* ----------------------
@@ -42,6 +42,7 @@ $lh: (
   - SHADOW
   ---------------------- */
 $shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+$shadow-navbar: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 $shadow-bold: 0 2px 15px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 
 /* ----------------------
@@ -55,7 +56,36 @@ $screen: (
   iphone: 320px
 );
 
-
 /* ----------------------
   - COLOR
   ---------------------- */
+$colors: (
+  // shades
+  black: #121f26,
+  white: #fff,
+  primary: (
+    150: #fdcf4e,
+    100: #ffd721,
+    50: #fae173
+  ),
+  grey: (
+    150: #23343f,
+    100: #425866,
+    50: #677e8c
+  ),
+  overlay: (
+    80: rgba(#000, 0.8),
+    50: rgba(#000, 0.5),
+    20: rgba(#000, 0.2)
+  )
+);
+
+/* ----------------------
+  - FONT WEIGHT
+  ---------------------- */
+$fw: (
+  light: 300,
+  reguler: 400,
+  bold: 700,
+  black: 900
+);
