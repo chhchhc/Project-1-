@@ -53,7 +53,6 @@
 @mixin colors-all-font-hover {
   color: color(black);
   transition: color 0.25s ease;
-  cursor: pointer;
   &:hover {
     color: darken(color(black), 10%);
   }
@@ -85,6 +84,22 @@
     }
     &:active {
       color: darken(color(primary, 50), 20%);
+    }
+  }
+}
+
+
+@mixin hover-button($type) {
+  // &:hover {
+  //   color: color(white);
+  //   .a-system-icon {
+  //     color: color(white);
+  //   }
+  // }
+  @if $type == "primary" {
+    &:hover {
+      background-color: color(primary, 150);
+      border-color: color(primary, 150);
     }
   }
 }

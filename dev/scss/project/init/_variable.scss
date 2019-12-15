@@ -16,7 +16,9 @@ $fz: (
   h4: 2.4rem,
   mh4: 1.6rem,
   body: 2rem,
-  mbody: 1.6rem
+  mbody: 1.6rem,
+  button-default: 1.6rem,
+  mbutton-default: 1.4rem,
 );
 
 /* ----------------------
@@ -32,6 +34,8 @@ $lh: (
   h4: 1.33,
   body: 1.6,
   mbody: 1.5,
+  button-default: 1.5,
+  mbutton-default: 1.71,
   info: 1.5,
   minfo: 1.71,
   action: 2,
@@ -70,8 +74,11 @@ $colors: (
   ),
   grey: (
     150: #23343f,
-    100: #425866,
-    50: #677e8c
+    125: #425866,
+    100: #677e8c,
+    75: #a3b5bf,
+    50: #c5d1d8,
+    25: #ebeff2
   ),
   overlay: (
     80: rgba(#000, 0.8),

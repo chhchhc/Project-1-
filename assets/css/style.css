@@ -714,10 +714,9 @@ body {
   color: #121f26;
   color: #121f26;
   -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-  cursor: pointer; }
+  transition: color 0.25s ease; }
   .a-h1.grey {
-    color: #425866; }
+    color: #677e8c; }
   .a-h1.white {
     color: #fff; }
   .a-h1:hover {
@@ -725,15 +724,17 @@ body {
   .a-h1:active {
     color: black; }
   .a-h1.grey {
-    color: #425866; }
+    color: #677e8c; }
     .a-h1.grey:hover {
-      color: #2e3d47; }
+      color: #51646f; }
     .a-h1.grey:active {
-      color: #1a2328; }
+      color: #3c4951; }
   .a-h1.white {
     color: #fff; }
     .a-h1.white:hover {
-      color: #677e8c; }
+      color: #c5d1d8; }
+    .a-h1.white:active {
+      color: #a3b5bf; }
   .a-h1.primary {
     color: #ffd721; }
     .a-h1.primary:hover {
