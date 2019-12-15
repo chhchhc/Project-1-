@@ -1,8 +1,0 @@
-@each $spacing in $spacing-list {
-  .mt-#{$spacing} { margin-top: #{$spacing / 10}rem !important; }
-  .mb-#{$spacing} { margin-bottom: #{$spacing / 10}rem !important; }
-  .m-#{$spacing} { margin: #{$spacing / 10}rem !important; }
-  .pt-#{$spacing} { padding-top: #{$spacing / 10}rem !important; }
-  .pb-#{$spacing} { padding-bottom: #{$spacing / 10}rem !important; }
-  .p-#{$spacing} { padding: #{$spacing / 10}rem !important; }
-}
