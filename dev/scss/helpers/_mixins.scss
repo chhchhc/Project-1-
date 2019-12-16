@@ -1,4 +1,4 @@
-@mixin clearfix() {
+@mixin clearfix {
   &:before,
   &:after {
     content: " ";
@@ -10,31 +10,31 @@
 }
 
 @mixin large {
-  @media only screen and (max-width: map-get($screen, large)) {
+  @media only screen and (max-width: screen(large)) {
     @content;
   }
 }
 
 @mixin medium {
-  @media only screen and (max-width: map-get($screen, medium)) {
+  @media only screen and (max-width: screen(medium)) {
     @content;
   }
 }
 
 @mixin small {
-  @media only screen and (max-width: map-get($screen, small)) {
+  @media only screen and (max-width: screen(small)) {
     @content;
   }
 }
 
 @mixin extra-small {
-  @media only screen and (max-width: map-get($screen, extra-small)) {
+  @media only screen and (max-width: screen(extra-small)) {
     @content;
   }
 }
 
 @mixin iphone {
-  @media only screen and (max-width: map-get($screen, iphone)) {
+  @media only screen and (max-width: screen(iphone)) {
     @content;
   }
 }

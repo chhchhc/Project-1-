@@ -1,0 +1,55 @@
+.c-navigation-bar {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.4s ease;¸
+
+  .container{
+    @include clearfix;
+  }
+
+  .navbar-logo {
+    float: left;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    img {
+      width: 209px;
+    }
+    .logo-image {
+      display: block;
+    }
+    .logo-image-fixed {
+      display: none;
+    }
+  }
+
+  .navbar-menu {
+    float: right;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    a {
+      &:first-child{
+        margin-left: 0;
+      }
+      // @include colors-all-font;
+      display: inline-block;
+      margin-left: 32px;
+    }
+  }
+
+  //For FIXED Navbar
+  &.on-scroll {
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    .navbar-logo {
+      .logo-image {
+        display: none;
+      }
+      .logo-image-fixed {
+        display: block;
+      }
+    }
+  }
+}
