@@ -707,9 +707,35 @@ template {
 /* ----------------------
   - FONT WEIGHT
   ---------------------- */
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.eot");
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black.svg#Roboto-Black") format("svg");
+  font-weight: black;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* ==========================================================================
    TEMPLATING
    ========================================================================== */
+body {
+  font-family: "Roboto";
+  font-weight: normal; }
+
 .container {
   width: 100%;
   max-width: 1170px;
@@ -718,6 +744,9 @@ template {
 a {
   text-decoration: none;
   color: #121f26; }
+
+ul li {
+  display: inline-block; }
 
 /* ==========================================================================
    FONT SIZING &  LINE HEIGHT
@@ -778,18 +807,18 @@ body {
     clear: both; }
   .c-navigation-bar .navbar-logo {
     float: left;
-    padding-top: 24px;
-    padding-bottom: 24px; }
+    padding-top: 8px;
+    padding-bottom: 8px; }
     .c-navigation-bar .navbar-logo img {
-      width: 209px; }
+      width: 250px; }
     .c-navigation-bar .navbar-logo .logo-image {
       display: block; }
     .c-navigation-bar .navbar-logo .logo-image-fixed {
       display: none; }
   .c-navigation-bar .navbar-menu {
     float: right;
-    padding-top: 12px;
-    padding-bottom: 12px; }
+    padding-top: 18px;
+    padding-bottom: 20px; }
     .c-navigation-bar .navbar-menu a {
       display: inline-block;
       margin-left: 32px; }

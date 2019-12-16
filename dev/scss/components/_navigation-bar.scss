@@ -11,10 +11,10 @@
 
   .navbar-logo {
     float: left;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     img {
-      width: 209px;
+      width: 250px;
     }
     .logo-image {
       display: block;
@@ -26,8 +26,8 @@
 
   .navbar-menu {
     float: right;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 20px;
     a {
       &:first-child{
         margin-left: 0;

@@ -2,6 +2,11 @@
    TEMPLATING
    ========================================================================== */
 
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+}   
+
 .container {
   width: 100%;
   max-width: 1170px;
@@ -11,6 +16,10 @@
 a {
   text-decoration: none;
   color: map-get($colors, black);
+}
+
+ul li {
+  display: inline-block;
 }
 
 /* ==========================================================================
