@@ -3,18 +3,17 @@
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.4s ease;¸
-
-  .container{
+  transition: all 0.4s ease;
+  ¸ .container {
     @include clearfix;
   }
 
   .navbar-logo {
     float: left;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     img {
-      width: 250px;
+      width: 315px;
     }
     .logo-image {
       display: block;
@@ -28,13 +27,13 @@
     float: right;
     padding-top: 18px;
     padding-bottom: 20px;
-    a {
-      &:first-child{
+    .content-item {
+      &:first-child {
         margin-left: 0;
       }
       // @include colors-all-font;
       display: inline-block;
-      margin-left: 32px;
+      margin-left: 10px;
     }
   }
 
