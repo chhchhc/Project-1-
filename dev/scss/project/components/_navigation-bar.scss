@@ -8,13 +8,15 @@
 
   .container {
     @include clearfix;
+    @include small {
+      padding: 0;
+    }
   }
 
   .navbar-logo {
     float: left;
     img {
       width: 350px;
-      // transform: scale(1.1);
     }
     .logo-image {
       display: block;
@@ -25,34 +27,43 @@
   }
 
   .navbar-menu {
-    float: right;
-    padding-top: 8px;
-    padding-bottom: 12px;
-    .content-item {
-      display: inline-block;
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
-      }
-      a {
-        color: white;
+    transition: all 0.3s ease;
+    @include small{
+      opacity: 0;
+    }
+    .menu-content {
+      float: right;
+      padding-top: 8px;
+      padding-bottom: 12px;
+      .content-item {
+        display: inline-block;
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          color: white;
+        }
       }
     }
   }
 
-  // &.active {
-
-  // }
-
-  //For FIXED Navbar
+  //Handle Scroll Navbar
   &.on-scroll {
     color: black;
     background-color: white;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     padding: 12px 0 12px 0;
+    @include small {
+      padding: 0;
+      height: 100%;
+      background-color: transparent;
+    }
     .navbar-logo {
-      img {
-        // transform: scale(1);
+      @include small {
+        background-color: white;
+        padding: 12px 24px;
+        float: none;
       }
       .logo-image {
         display: none;
@@ -60,16 +71,63 @@
       .logo-image-fixed {
         display: block;
       }
+      @include extra-small {
+        img {
+          width: 300px;
+        }
+      }
+      @include iphone {
+        img {
+          width: 200px;
+        }
+      }
     }
+
     .navbar-menu {
-      padding-top: 6px;
-      padding-bottom: 6px;
       @include small {
-        padding-top: 10px;
+        background-color: white;
+        padding: 16px 40px 16px 40px;
+        z-index: -1;
+        position: relative;
+        transform: scale(0);
+        transform: translateY(-150px);
       }
-      .content-item a{
-        color: black;
+      .menu-content {
+        padding-bottom: 6px;
+        @include small {
+          float: none;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+        }
+        .content-item {
+          @include small {
+            padding: 0;
+            margin: 0 0 24px 0;
+            display: block;
+            &:last-child {
+              margin: 0;
+            }
+          }
+          a {
+            color: black;
+          }
+        }
       }
+    }
+  }
+
+  //HandleClick Navigation
+  &.show-navigation {
+    background-color: rgba(0, 0, 0, 0.5);
+    .navbar-menu {
+      @include small {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0px);
+      }
+
+      
     }
   }
 }

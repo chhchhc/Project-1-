@@ -814,6 +814,9 @@ body {
     display: table; }
   .c-navigation-bar .container:after {
     clear: both; }
+  @media only screen and (max-width: 768px) {
+    .c-navigation-bar .container {
+      padding: 0; } }
   .c-navigation-bar .navbar-logo {
     float: left; }
     .c-navigation-bar .navbar-logo img {
@@ -823,33 +826,83 @@ body {
     .c-navigation-bar .navbar-logo .logo-image-fixed {
       display: none; }
   .c-navigation-bar .navbar-menu {
-    float: right;
-    padding-top: 8px;
-    padding-bottom: 12px; }
-    .c-navigation-bar .navbar-menu .content-item {
-      display: inline-block;
-      margin-left: 10px; }
-      .c-navigation-bar .navbar-menu .content-item:first-child {
-        margin-left: 0; }
-      .c-navigation-bar .navbar-menu .content-item a {
-        color: white; }
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    @media only screen and (max-width: 768px) {
+      .c-navigation-bar .navbar-menu {
+        opacity: 0; } }
+    .c-navigation-bar .navbar-menu .menu-content {
+      float: right;
+      padding-top: 8px;
+      padding-bottom: 12px; }
+      .c-navigation-bar .navbar-menu .menu-content .content-item {
+        display: inline-block;
+        margin-left: 10px; }
+        .c-navigation-bar .navbar-menu .menu-content .content-item:first-child {
+          margin-left: 0; }
+        .c-navigation-bar .navbar-menu .menu-content .content-item a {
+          color: white; }
   .c-navigation-bar.on-scroll {
     color: black;
     background-color: white;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     padding: 12px 0 12px 0; }
+    @media only screen and (max-width: 768px) {
+      .c-navigation-bar.on-scroll {
+        padding: 0;
+        height: 100%;
+        background-color: transparent; } }
+    @media only screen and (max-width: 768px) {
+      .c-navigation-bar.on-scroll .navbar-logo {
+        background-color: white;
+        padding: 12px 24px;
+        float: none; } }
     .c-navigation-bar.on-scroll .navbar-logo .logo-image {
       display: none; }
     .c-navigation-bar.on-scroll .navbar-logo .logo-image-fixed {
       display: block; }
-    .c-navigation-bar.on-scroll .navbar-menu {
-      padding-top: 6px;
+    @media only screen and (max-width: 480px) {
+      .c-navigation-bar.on-scroll .navbar-logo img {
+        width: 300px; } }
+    @media only screen and (max-width: 375px) {
+      .c-navigation-bar.on-scroll .navbar-logo img {
+        width: 200px; } }
+    @media only screen and (max-width: 768px) {
+      .c-navigation-bar.on-scroll .navbar-menu {
+        background-color: white;
+        padding: 16px 40px 16px 40px;
+        z-index: -1;
+        position: relative;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform: translateY(-150px);
+        transform: translateY(-150px); } }
+    .c-navigation-bar.on-scroll .navbar-menu .menu-content {
       padding-bottom: 6px; }
       @media only screen and (max-width: 768px) {
-        .c-navigation-bar.on-scroll .navbar-menu {
-          padding-top: 10px; } }
-      .c-navigation-bar.on-scroll .navbar-menu .content-item a {
+        .c-navigation-bar.on-scroll .navbar-menu .menu-content {
+          float: none;
+          padding: 0;
+          margin: 0;
+          width: 100%; } }
+      @media only screen and (max-width: 768px) {
+        .c-navigation-bar.on-scroll .navbar-menu .menu-content .content-item {
+          padding: 0;
+          margin: 0 0 24px 0;
+          display: block; }
+          .c-navigation-bar.on-scroll .navbar-menu .menu-content .content-item:last-child {
+            margin: 0; } }
+      .c-navigation-bar.on-scroll .navbar-menu .menu-content .content-item a {
         color: black; }
+  .c-navigation-bar.show-navigation {
+    background-color: rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 768px) {
+      .c-navigation-bar.show-navigation .navbar-menu {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px); } }
 
 .hero-banner-section {
   position: relative;
