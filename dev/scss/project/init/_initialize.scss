@@ -5,12 +5,18 @@
 body {
   font-family: 'Montserrat';
   font-weight: 300;
+  height: 12000px;
 }   
 
 .container {
   width: 100%;
   max-width: 1170px;
   margin: auto;
+  
+  @include mq(1175px){
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 a {

@@ -39,6 +39,11 @@
   }
 }
 
+@mixin mq($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
 
 @mixin colors-all-font {
   color: color(black);
